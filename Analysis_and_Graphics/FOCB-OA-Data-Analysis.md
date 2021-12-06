@@ -182,7 +182,7 @@ the_data <- the_data %>%
 ### CO2SYS Results
 
 We ran CO2SYS in Python, principally to calculate estimated pH under the
-total pH scale. Her we load it and use a left join by timestamp to add
+total pH scale. Here we load it and use a left join by timestamp to add
 the data to the principal data set.
 
 ``` r
@@ -237,7 +237,7 @@ rm(ph_tot_data)
 ## Takehashi et al. 2002 Relationships
 
 Here we follow a formula for calculating a “Temperature Corrected”
-pCO<sub>2</sub>, which is derived from methods in Takehashi et al. 2002.
+pCO<sub>2</sub>, which is derived from methods in Takahashi et al. 2002.
 The “temperature corrected” version adjusts for the thermodynamic effect
 of temperature on pCO<sub>2</sub>.
 
