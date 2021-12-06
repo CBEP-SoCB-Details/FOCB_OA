@@ -140,7 +140,7 @@ an hour) for periods of days to weeks. This really only matters when
 looking at effect of time of day or time of tide on FOCB results.
 
 For some reason, read\_excel is not reading in the dates and times
-correctly. WE reconstruct the time from components. As described above,
+correctly. We reconstruct the time from components. As described above,
 the timezone settings for this are not 100% certain. here I read the
 data in with local time, which I believe is usually correct for FOCB’s
 data.
@@ -273,7 +273,7 @@ the_data <- the_data %>%
 ## Takehashi et al. 2002 Relationships
 
 Here we follow a formula for calculating a “Temperature Corrected”
-pCO<sub>2</sub>, which is derived from methods in Takehashi et al. 2002.
+pCO<sub>2</sub>, which is derived from methods in Takahashi et al. 2002.
 The “temperature corrected” version adjusts for the thermodynamic effect
 of temperature on pCO<sub>2</sub>.
 
@@ -313,7 +313,7 @@ combination of biology and diffusion of CO<sub>2</sub> between ocean and
 atmosphere and advection past the sensor by tides and currents. Here we
 adjust pCO<sub>2</sub> to a “standard temperature” of 12 degrees C. This
 is slightly warmer than the observed annual average temperature. We use
-12 degrees C principlly for consistency with analysis of the CBEP / UNH
+12 degrees C principally for consistency with analysis of the CBEP / UNH
 data.
 
 ``` r
@@ -478,7 +478,7 @@ ggsave('figures/omegaSeasonal_focb.pdf', device=cairo_pdf, width = 7, height = 5
 
 # Daily Patterns
 
-This takes so long, I wrapped in in an IF to avoid rerunning it if we
+This takes so long, I wrapped it in an IF to avoid rerunning it if we
 either have a loaded version or a saved version. Note that this means if
 you change data or model specifications, it will not update your results
 unles you delete the saved versions manually.
